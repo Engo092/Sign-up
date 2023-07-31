@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="logo">
+        <span class="logoheader"><img src="odin-lined.png"></img>Odin</span>
+        <span class="credit">Photo by
+            <a href="https://unsplash.com/pt-br/@priscilladupreez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Priscilla Du Preez
+            </a>
+            on 
+            <a href="https://unsplash.com/pt-br/fotografias/nNMBa7Y1Ymk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Unsplash
+            </a>
+        </span>
+    </div>
+    <div class="main">
+        <p class="info">This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            <br>Sign up <em>now</em> to get started.
+            <br><br>You <em>know</em> you want to.
+        </p>
+        <form action="" id="accform">
+            <legend>Let's do this!</legend>
+            <div class="form-row">
+                <a>
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </a>
+                <a>
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </a>
+            </div>
+            <div class="form-row">
+                <a>
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </a>
+                <a>
+                    <label for="phonenum">PHONE NUMBER</label>
+                    <input type="tel" name="phonenum" id="phonenum" required>
+                </a>
+            </div>
+            <div class="form-row">
+                <a>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="pwd" id="pwd" class="pwd" required>
+                    <span></span>
+                </a>
+                <a>
+                    <label for="pwdconfirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="pwdconfirm" id="pwdconfirm" class="pwdconfirm" required>
+                </a>
+            </div>
+        </form>
+        <div class="account">
+            <button type="submit" form="accform">Create Account</button>
+            <span class="login">Already have an account? <a href="">Log in</a></span>
+        </div>
+    </div>
+</body>
+</html>

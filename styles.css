@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "justincase";
+    src:
+        url("font/justincasedemo-webfont.woff") format("woff"),
+        url("font/justincasedemo-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --logo-width: max(34vw, 230px);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    font-family: Roboto, sans-serif;
+    overflow-y: hidden;
+}
+
+.logo {
+    width: var(--logo-width);
+    min-width: 300px;
+    height: 100vh;
+    min-height: 350px;
+    background: url(priscilla-du-preez-nNMBa7Y1Ymk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: max(var(--logo-width), 300px) max(450px, 100vh);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.main {
+    background-color: #f1f1f1;
+    width: calc(100vw - var(--logo-width));
+    min-width: 550px;
+    height: 100vh;
+}
+
+.credit {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #c4c4c4;
+    font-family: Roboto, sans-serif;
+    font-size: medium;
+    padding: 1.2em 0;
+}
+
+.credit a {
+    color: #b4b4b4;
+}
+
+.logoheader {
+    background-color: rgba(0, 0, 0, 0.56);
+    color: #dddddd;
+    align-self: center;
+    font: 1em "justincase", sans-serif;
+    font-size: 96px;
+    font-weight: 600;
+    padding: 0.1em 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: max(40vh, 100px);
+}
+
+.logoheader img {
+    transform: translateY(15px);
+    height: 1.2em;
+}
+
+.info {
+    width: max(40vw, 500px);
+    margin-left: 6vw;
+    margin-top: max(12vh, 40px);
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: rgb(24, 24, 24);
+}
+
+form {
+    margin-top: 3em;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 20em;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+form legend {
+    margin-left: 6vw;
+    font-size: x-large;
+    padding: 1em 0 0 0;
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+}
+
+form label {
+    padding: 1em 0 5px 0;
+}
+
+.form-row {
+    margin-left: 6vw;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: rgb(44, 42, 42);
+}
+
+.form-row a {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"],
+input[type="tel"], input[type="password"] {
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 2em;
+    width: 18em;
+}
+
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="tel"]:focus, input[type="password"]:focus {
+    outline: 1px solid blue;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.account {
+    margin-left: 6vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    width: 190px;
+    padding: 1em 0; 
+    border: none;
+    border-radius: 10px;
+    background-color: #596D48;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.login {
+    width: 15em;
+    margin-top: 1.5vh;
+    color: rgb(29, 28, 28);
+}
+
+.login a {
+    text-decoration: none;
+    color: #445336;
+}
+
+input:valid {
+    border-color: rgb(39, 161, 39);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #c03f36;
+}
+
+input[type="password"]:invalid + span::after {
+    content: "* Passwords do not match";
+    color: #c03f36;
+    font-weight: 200;
+}
