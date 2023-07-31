@@ -152,6 +152,11 @@ button[type="submit"] {
     font-weight: bold;
 }
 
+button[type="submit"]:hover {
+    background-color: #71885e;
+    cursor: pointer;
+}
+
 .login {
     width: 15em;
     margin-top: 1.5vh;
